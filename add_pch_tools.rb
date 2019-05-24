@@ -1,4 +1,4 @@
-#  V2.0.1
+#  V2.0.2
 #  Created by iPhuan on 2018/04/20.
 
 
@@ -116,11 +116,15 @@ cur_dir = Dir::pwd
 puts "当前运行目录：#{cur_dir}"
 Dirs = cur_dir.split("/")
 
-cur_proj = Dirs.last
+cur_proj = ""
 Find.find("#{cur_dir}") do |file|
+    Find.prune if file == "#{cur_dir}/IPHCodeObfuscation"
+    Find.prune if file == "#{cur_dir}/Pods"
+
     paths = file.split("/")
     if paths.last.include?(".xcodeproj")
         cur_proj = paths.last
+        break
     end
 end
 
@@ -162,7 +166,7 @@ target.build_configurations.each do |config|
             end
 
             puts "在Build Settings中设置Prefix Header"
-            config.build_settings['GCC_PREFIX_HEADER'] ||= pch_path
+            config.build_settings['GCC_PREFIX_HEADER'] = pch_path
             puts "设置Prefix Header成功！"
             
         end

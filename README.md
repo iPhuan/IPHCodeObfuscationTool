@@ -8,7 +8,7 @@ IPHCodeObfuscationTool
 
 使用说明：
 -------------------------------------------------------------
-1、下载 `IPHCodeObfuscationTool`目录（需要 `IPHCodeObfuscationTool.sh`和`add_pch_tools`脚本工具在同一目录）
+1、下载 `IPHCodeObfuscationTool`目录（需要 `IPHCodeObfuscationTool.sh`和`add_pch_tools`脚本工具在同一目录，如未安装[brew](https://brew.sh/index_zh-cn.html)和[ruby](https://www.ruby-lang.org/en/documentation/installation/)，请提前安装）
 
 2、打开终端，cd到你的工程根目录，如：
 
@@ -78,6 +78,16 @@ IPHCodeObfuscationTool
 更新日期：2018年5月10日  
 更新说明：  
 > * 更新Git域名。  
+
+-------------------------------------------------------------    
+
+
+### V2.0.2
+更新日期：2018年5月24日  
+更新说明：  
+> * 修复查找工程文件可能出错的问题；
+> * 修复无法在`Build Settings`添加`Prefix Header`问题；
+> * 更新文档说明；
 
 -------------------------------------------------------------    
 
