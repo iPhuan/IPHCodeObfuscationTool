@@ -18,7 +18,7 @@ IPHCodeObfuscationTool
 
 3、将`IPHCodeObfuscationTool.sh`拖入终端执行脚本，如有提示根据提示操作选择
 
-4、参考[IPHCodeObfuscation说明](https://github.com/iPhuan/IPHCodeObfuscation.git)对代码进行混淆
+4、参考[IPHCodeObfuscation](https://github.com/iPhuan/IPHCodeObfuscation.git)说明对代码进行混淆
 
 <br />
 <br />
@@ -27,7 +27,7 @@ IPHCodeObfuscationTool
 
 手动添加IPHCodeObfuscation：
 -------------------------------------------------------------
-1、下载[IPHCodeObfuscation说明](https://github.com/iPhuan/IPHCodeObfuscation.git)将其拷贝到主工程目录
+1、下载[IPHCodeObfuscation](https://github.com/iPhuan/IPHCodeObfuscation.git)，将其拷贝到主工程目录
 >注意需要移除`IPHCodeObfuscation`目录中git信息
 
 2、打开你的工程，在Podfile文件的结尾添加以下代码并执行`pod install`命令
@@ -40,7 +40,7 @@ IPHCodeObfuscationTool
 
 3、在主工程创建Prefix Header头文件，文件中需要包含`IPHObfuscationSymbolsHeader.h`头文件的引用，并在`Build Settings`的`Prefix Header`选项关联该pch文件
 
-4、参考[IPHCodeObfuscation说明](https://github.com/iPhuan/IPHCodeObfuscation.git)对代码进行混淆
+4、参考[IPHCodeObfuscation](https://github.com/iPhuan/IPHCodeObfuscation.git)说明对代码进行混淆
 
 
 
